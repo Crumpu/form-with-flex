@@ -1,0 +1,64 @@
+:root {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width:  500px;
+  height: auto;
+  border: 2px solid;
+  background-color: dodgerblue;
+  margin: auto;
+}
+
+h1, p {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  color: white;
+  width: 80%;
+  margin: auto;
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Text form */
+
+.textContainer {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid;
+  margin-top: 15px;
+  font-size: 0; 
+}
+
+.textContainer > div {
+  display: flex;
+  flex-grow: 1;
+  margin: 10px;
+  height: 50px;
+}
+
+.textContainer > div > input {
+  border: 0px;
+  border-radius: 5px;
+  padding-left: 10px;
+  flex-grow: 1;
+}
+
+/* Buttons */
+
+.btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.radioBtn > label {
+  order: 1;
+}
+
+.radioBtn > input {
+  order: 1;
+}
