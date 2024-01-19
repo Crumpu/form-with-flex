@@ -1,26 +1,36 @@
 :root {
+  --wdht: 95%;
+  --mrgn: 10px;
+  @font-face {
+    font-family: 'lato';
+    src: url();
+  }
+}
+
+.cont {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width:  500px;
   height: auto;
-  border: 2px solid;
-  background-color: dodgerblue;
   margin: auto;
+  background-color: #3ea9f5;  
 }
 
-h1, p {
-  display: flex;
-  justify-content: center;
-  margin: 5px;
+header {
+  text-align: center;
   color: white;
   width: 80%;
   margin: auto;
 }
 
+h1 {
+  font-size: 35px;
+}
+
 p {
   margin-top: 20px;
-  text-align: center;
   font-size: 20px;
 }
 
@@ -29,21 +39,20 @@ p {
 .textContainer {
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid;
-  margin-top: 15px;
-  font-size: 0; 
+  width: var(--wdht);
+  margin: auto;
 }
 
 .textContainer > div {
   display: flex;
   flex-grow: 1;
-  margin: 10px;
+  margin: var(--mrgn);
   height: 50px;
 }
 
 .textContainer > div > input {
   border: 0px;
-  border-radius: 5px;
+  border-radius: 3px;
   padding-left: 10px;
   flex-grow: 1;
 }
@@ -53,12 +62,36 @@ p {
 .btn {
   display: flex;
   flex-direction: column;
+  width: var(--wdht);
+  margin: auto;
 }
 
-.radioBtn > label {
-  order: 1;
+.radioBtn {
+  display: flex;
+  justify-content: start;
+  border: 1px solid white;
+  margin: var(--mrgn);
+}
+
+.radioBtn > div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 20px 10px;
 }
 
 .radioBtn > input {
-  order: 1;
+  margin: 0 5px 20px 10px;
+}
+
+label {
+  color: white;
+  font-size: 20px;
+}
+
+
+.radioBtn > div > p {
+  color: white;
+  font-size: 12px;
+  text-align: justify;
+  margin: 0;
 }

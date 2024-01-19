@@ -6,63 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link type="image/png" rel="icon" href="/assets/icons/icons8-account-16.png">
+
   <title>Create account</title>
 </head>
 
 <body>
   <!-- header -->
-  <header>
-    <h1>CREATE AN ACCOUNT</h1>
-    <p>We always keep you name and email address private</p>
-  </header>
-  <main>
-    <form>
-      <div class="textContainer">
-        <div>
-          <input type="text" id="fname" placeholder="First name" required>
+  <div class="cont">
+    <header>
+      <h1>CREATE AN ACCOUNT</h1>
+      <p>We always keep you name and email address private</p>
+    </header>
+    <main>
+      <form>
+        <div class="textContainer">
+          <div>
+            <input type="text" id="fname" placeholder="First name" required>
+          </div>
+          <div>
+            <input type="text" id="lname" placeholder="Last name" required>
+          </div>
+          <div>
+            <input type="text" id="dname" placeholder="Display name" required>
+          </div>
+          <div>
+            <input type="email" id="email" placeholder="Email Address" required>
+          </div>
+          <div>
+            <input type="password" id="pass" minlength="8" placeholder="Password" required>
+          </div>
+          <div>
+            <input type="password" id="passConf" minlength="8" placeholder="Password Confirmation" required>
+          </div>
+        </div>
+        <div class="btn">
+          <div class="radioBtn">
+            <input type="radio" name="acType" id="bayer">
+            <div>
+              <label for="bayer">Join As a Buyer</label>
+              <p>I am lokking for a Name, Logo or Tagline my bussines, brand or product</p>
+            </div>
+          </div>
+          <div class="radioBtn">
+            <input type="radio" name="acType" id="seller">
+            <div>
+              <label for="seller">Join As a Creative or Marketplace Seller</label>
+              <p>I plan to submit name ideas, Logo designs or sell names in Domain Marketplace</p>
+            </div>
+          </div>
+          <div chkbox>
+            <input type="checkbox" name="chb" id="chb">
+            <label for="chb">Allow Squadhelp to send marketing/promotional offers from time to time</label>
+          </div>
         </div>
         <div>
-          <input type="text" id="lname" placeholder="Last name" required>
+          <button type="submit">
+            Create account
+          </button>
         </div>
-        <div>
-          <input type="text" id="dname" placeholder="Display name" required>
-        </div>
-        <div>
-          <input type="email" id="email" placeholder="Email Address" required>
-        </div>
-        <div>
-          <input type="password" id="pass" minlength="8" placeholder="Password" required>
-        </div>
-        <div>
-          <input type="password" id="passConf" minlength="8" placeholder="Password Confirmation" required>
-        </div>
-      </div>
-      <div class="btn">
-        <div class="radioBtn">
-        <input type="radio" name="acType" id="bayer">
-        <label for="bayer">Join As a Buyer</label>
-        <p>I am lokking for a Name, Logo or Tagline my bussines, brand or product</p>
-      </div>
-      <div class="radioBtn">
-        <input type="radio" name="acType" id="seller">
-        <label for="seller">Join As a Creative or Marketplace Seller</label>
-        <p>I plan to submit name ideas, Logo designs or sell names in Domain Marketplace</p>
-
-      </div>
-      <div>
-        <label for="chb">Allow Squadhelp to send marketing/promotional offers from time to time</label>
-        <input type="checkbox" name="chb" id="chb">
-      </div>
-      </div>
-      <div>
-        <button type="submit">
-          Create account
-        </button>
-      </div>
-
-    </form>
-  </main>
-
+      </form>
+    </main>
+  </div>
 </body>
 
 </html>
